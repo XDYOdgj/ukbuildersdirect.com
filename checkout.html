@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link href="static/css/css2-Manropewght200300400500600700800_swap.css" rel="stylesheet">
+		<link href="static/css/css2-KaushanScript_swap.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="static/css/animate.css">
+		<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="static/css/chosen.min.css">
+		<link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="static/css/line-awesome.css">
+		<link rel="stylesheet" type="text/css" href="static/css/pe-icon-7-stroke.css">
+		<link rel="stylesheet" type="text/css" href="static/css/jquery.scrollbar.css">
+		<link rel="stylesheet" type="text/css" href="static/css/lightbox.min.css">
+		<link rel="stylesheet" type="text/css" href="static/css/magnific-popup.css">
+		<link rel="stylesheet" type="text/css" href="static/css/slick.min.css">
+		<link rel="stylesheet" type="text/css" href="static/css/flaticon.css">
+		<link rel="stylesheet" type="text/css" href="static/css/megamenu.css">
+		<link rel="stylesheet" type="text/css" href="static/css/dreaming-attribute.css">
+		<link type="text/css" rel="stylesheet" href="static/css/jquery.toast.css">
+		<link rel="stylesheet" type="text/css" href="static/css/common.css">
+		<link rel="stylesheet" type="text/css" href="static/css/style.css">
+		<meta name="robots" content="noindex, nofollow">
+		<title>Checkout</title>
+		<style>
+			.radio-inline {
+				padding: 0 10px !important;
+				margin: 0 !important;
+				font-weight: 500;
+			}
+		</style>
+	</head>
+	<body>
+	<header id="header" class="header style-04 header-transparent header-sticky">
+		<div class="header-middle">
+			<div class="header-middle-inner">
+				<div class="header-search-mid">
+					<div class="header-search">
+						<div class="block-search">
+							<form role="search" method="get"
+								  class="form-search block-search-form lynessa-live-search-form">
+								<div class="form-content search-box results-search">
+									<div class="inner">
+										<input autocomplete="off" class="searchfield txt-livesearch input" name="s"
+											   placeholder="Search here..." type="text" id="livesearch1"
+											   onblur="fnSearch(1)">
+									</div>
+								</div>
+								<input name="post_type" value="product" type="hidden">
+								<input name="taxonomy" value="product_cat" type="hidden">
+								<div class="category">
+									<select title="product_cat" name="product_cat" id="1771262470"
+											class="category-search-option" tabindex="-1" style="display: none;">
+										<option value="0">All Categories</option>
+										<option class="level-0" value="light">Just In</option>
+										<option class="level-0" value="chair">Restock</option>
+										<option class="level-0" value="table">Dresses</option>
+										<option class="level-0" value="bed">Shirts</option>
+										<option class="level-0" value="new-arrivals">New arrivals</option>
+										<option class="level-0" value="lamp">Leggings</option>
+										<option class="level-0" value="specials">Knit Tops</option>
+										<option class="level-0" value="sofas">Bodysuits</option>
+									</select>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="header-logo-menu">
+					<div class="block-menu-bar">
+						<a class="menu-bar menu-toggle" href="#">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+					</div>
+					<div class="header-logo">
+						<a href="index"><img alt="Lynessa" src="./static/image/logo.png" class="logo"></a>
+					</div>
+				</div>
+				<div class="header-control">
+					<div class="header-control-inner">
+						<div class="meta-dreaming">
+							<ul class="wpml-menu">
+								<li class="menu-item lynessa-dropdown block-language">
+									<a href="#" data-lynessa="lynessa-dropdown">
+										<img src="static/picture/en.png" alt="en" width="18" height="12">
+										English
+									</a>
+									<span class="toggle-submenu"></span>
+									<ul class="sub-menu">
+										<li class="menu-item">
+											<a href="#">
+												<img src="static/picture/it.png" alt="it" width="18" height="12">
+												Italiano
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu-item">
+									<div class="wcml-dropdown product wcml_currency_switcher">
+										<ul>
+											<li class="wcml-cs-active-currency">
+												<a class="wcml-cs-item-toggle">USD</a>
+												<ul class="wcml-cs-submenu">
+													<li>
+														<a>USD</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							<div class="menu-item block-user block-dreaming lynessa-dropdown">
+								<a class="block-link clickAccountBut">
+									<span class="pe-7s-user"></span>
+								</a>
+								<ul class="sub-menu">
+									<li
+											class="menu-item lynessa-MyAccount-navigation-link lynessa-MyAccount-navigation-link--orders">
+										<a href="orders">Orders</a>
+									</li>
+									<li
+											class="menu-item lynessa-MyAccount-navigation-link lynessa-MyAccount-navigation-link--edit-account">
+										<a href="edit-address">Addresses</a>
+									</li>
+									<li
+											class="menu-item lynessa-MyAccount-navigation-link lynessa-MyAccount-navigation-link--edit-account">
+										<a href="edit-account">Account details</a>
+									</li>
+									<li onclick="fnLogout()"
+										class="menu-item lynessa-MyAccount-navigation-link lynessa-MyAccount-navigation-link--customer-logout">
+										<a href="#">Logout</a>
+									</li>
+								</ul>
+							</div>
+							<div class="block-minicart block-dreaming lynessa-mini-cart lynessa-dropdown">
+								<div class="shopcart-dropdown block-cart-link" data-lynessa="lynessa-dropdown">
+									<a class="block-link link-dropdown" href="cart">
+										<span class="pe-7s-shopbag"></span>
+										<span class="count  cart-num">0</span>
+									</a>
+								</div>
+								<div class="widget lynessa widget_shopping_cart">
+									<div class="widget_shopping_cart_content">
+										<h3 class="minicart-title">Your Cart<span
+												class="minicart-number-items cart-num">0</span></h3>
+										<ul class="lynessa-mini-cart cart_list product_list_widget  "
+											id="right_product_list">
+
+										</ul>
+										<p class="lynessa-mini-cart__total total"><strong>Subtotal:</strong>
+											<span class="lynessa-Price-amount amount"><span
+													class="lynessa-Price-currencySymbol">$</span><span
+													class="total-amount-goods">0.00</span></span>
+										</p>
+										<p class="lynessa-mini-cart__buttons buttons">
+											<a href="cart" class="button lynessa-forward">Viewcart</a>
+											<a href="checkout"
+											   class="button checkout lynessa-forward">Checkout</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-wrap-stick">
+			<div class="header-position">
+				<div class="header-nav">
+					<div class="container">
+						<div class="lynessa-menu-wapper"></div>
+						<div class="header-nav-inner">
+							<div class="box-header-nav menu-nocenter">
+								<ul id="menu-primary-menu"
+									class="clone-main-menu lynessa-clone-mobile-menu lynessa-nav main-menu">
+									<li id="menu-item-230"
+										class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 parent parent-megamenu item-megamenu menu-item-has-children">
+										<a class="lynessa-menu-item-title" title="Home" href="index">Home</a>
+										<span class="toggle-submenu"></span>
+									</li>
+									<li id="menu-item-228"
+										class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-228 parent parent-megamenu item-megamenu menu-item-has-children">
+
+										<a class="lynessa-menu-item-title" title="Shop"
+										   href="shop-list">Shop</a>
+										<span class="toggle-submenu"></span>
+										<div class="submenu megamenu megamenu-shop">
+											<div class="row" id="listitem-inner">
+
+											</div>
+										</div>
+									</li>
+									<li id="menu-item-229"
+										class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-229">
+										<a class="lynessa-menu-item-title" href="blog-grid"
+										   title="Blog">Blog</a>
+									</li>
+									<li id="menu-item-237"
+										class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-237 parent">
+										<a class="lynessa-menu-item-title" title="About"
+										   href="contact">Contact</a>
+										<span class="toggle-submenu"></span>
+										<!-- 	<ul role="menu" class="submenu">
+                                            <li id="menu-item-987"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-987">
+                                                <a class="lynessa-menu-item-title" title="About"
+                                                    href="about">About</a>
+                                            </li>
+                                                <li id="menu-item-988"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988">
+                                                <a class="lynessa-menu-item-title" title="Contact"
+                                                    href="contact">Contact</a>
+                                            </li>
+                                            <li id="menu-item-990"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-990">
+                                                <a class="lynessa-menu-item-title" title="Page 404"
+                                                    href="404">Page 404</a>
+                                            </li>
+                                        </ul> -->
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-mobile">
+			<div class="header-mobile-left">
+				<div class="block-menu-bar">
+					<a class="menu-bar menu-toggle" href="#">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+				<div class="header-search lynessa-dropdown">
+					<!-- 	<div class="header-search-inner" data-lynessa="lynessa-dropdown">
+                                <a href="#" class="link-dropdown block-link">
+                                    <span class="pe-7s-search"></span>
+                                </a>
+                            </div> -->
+					<div class="block-search">
+						<div class="form-search block-search-form lynessa-live-search-form">
+							<div class="form-content search-box results-search">
+								<div class="inner">
+									<input class="searchfield txt-livesearch input livesearch" id="livesearch2"
+										   placeholder="Search here..." type="text" onblur="fnSearch(2)">
+								</div>
+							</div>
+							<input name="post_type" value="product" type="hidden">
+							<input name="taxonomy" value="product_cat" type="hidden">
+							<div class="category">
+								<select title="product_cat" name="product_cat" id="1770352541"
+										class="category-search-option" tabindex="-1" style="display: none;">
+									<option value="0">All Categories</option>
+									<option class="level-0" value="light">Just In</option>
+									<option class="level-0" value="chair">Restock</option>
+									<option class="level-0" value="table">Dresses</option>
+									<option class="level-0" value="bed">Shirts</option>
+									<option class="level-0" value="new-arrivals">New arrivals</option>
+									<option class="level-0" value="lamp">Leggings</option>
+									<option class="level-0" value="specials">Knit Tops</option>
+									<option class="level-0" value="sofas">Bodysuits</option>
+								</select>
+							</div>
+							<button type="button" class="btn-submit">
+								<span class="pe-7s-search"></span>
+							</button>
+						</div><!-- block search -->
+					</div>
+				</div>
+				<ul class="wpml-menu">
+					<li class="menu-item lynessa-dropdown block-language">
+						<a href="#" data-lynessa="lynessa-dropdown">
+							<img src="static/picture/en.png" alt="en" width="18" height="12">
+							English
+						</a>
+						<span class="toggle-submenu"></span>
+						<ul class="sub-menu">
+							<li class="menu-item">
+								<a href="#">
+									<img src="static/picture/it.png" alt="it" width="18" height="12">
+									Italiano
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-item">
+						<div class="wcml-dropdown product wcml_currency_switcher">
+							<ul>
+								<li class="wcml-cs-active-currency">
+									<a class="wcml-cs-item-toggle">USD</a>
+									<ul class="wcml-cs-submenu">
+										<li>
+											<a>USD</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+			<div class="header-mobile-mid">
+				<div class="header-logo">
+					<a href="index"><img alt="Lynessa" src="./static/image/logo.png" class="logo"></a>
+				</div>
+			</div>
+			<div class="header-mobile-right">
+				<div class="meta-dreaming">
+					<div class="menu-item block-user block-dreaming lynessa-dropdown">
+						<a class="block-link clickAccountBut">
+							<span class="pe-7s-user"></span>
+						</a>
+						<ul class="sub-menu">
+							<li
+									class="menu-item lynessa-MyAccount-navigation-link lynessa-MyAccount-navigation-link--orders">
+								<a href="orders">Orders</a>
+							</li>
+							<li
+									class="menu-item lynessa-MyAccount-navigation-link lynessa-MyAccount-navigation-link--edit-account">
+								<a href="edit-address">Addresses</a>
+							</li>
+							<li
+									class="menu-item lynessa-MyAccount-navigation-link lynessa-MyAccount-navigation-link--edit-account">
+								<a href="edit-account">Account details</a>
+							</li>
+							<li onclick="fnLogout()"
+								class="menu-item lynessa-MyAccount-navigation-link lynessa-MyAccount-navigation-link--customer-logout">
+								<a href="#">Logout</a>
+							</li>
+						</ul>
+					</div>
+					<div class="block-minicart block-dreaming lynessa-mini-cart lynessa-dropdown">
+						<div class="shopcart-dropdown block-cart-link" data-lynessa="lynessa-dropdown">
+							<a class="block-link link-dropdown" href="cart">
+								<span class="pe-7s-shopbag"></span>
+								<span class="count  cart-num">0</span>
+							</a>
+						</div>
+						<div class="widget lynessa widget_shopping_cart">
+							<div class="widget_shopping_cart_content">
+								<h3 class="minicart-title">Your Cart<span
+										class="minicart-number-items cart-num">0</span>
+								</h3>
+								<ul class="lynessa-mini-cart cart_list product_list_widget  "
+									id="right_product_list_mini">
+
+								</ul>
+								<p class="lynessa-mini-cart__total total"><strong>Subtotal:</strong>
+									<span class="lynessa-Price-amount amount"><span
+											class="lynessa-Price-currencySymbol">$</span><span
+											class="total-amount-goods">0.00</span></span>
+								</p>
+								<p class="lynessa-mini-cart__buttons buttons">
+									<a href="cart" class="button lynessa-forward">Viewcart</a>
+									<a href="checkout" class="button checkout lynessa-forward">Checkout</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+		<div class="banner-wrapper has_background">
+			<img src="static/picture/banner-for-all2.jpg" style="max-width: 100%;width: 100%;height: auto;" class="img-responsive attachment-1920x447 size-1920x447"
+				alt="img">
+			<div class="banner-wrapper-inner">
+				<h1 class="page-title">Checkout</h1>
+				<div role="navigation" aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
+					<ul class="trail-items breadcrumb">
+						<li class="trail-item trail-begin"><a href="index"><span>Home</span></a></li>
+						<li class="trail-item trail-end active"><span>Checkout</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<main class="site-main  main-container no-sidebar">
+			<div class="container">
+				<div class="row">
+					<div class="main-content col-md-12">
+						<div class="page-main-content">
+							<div class="lynessa">
+								<form name="checkout" id="checkout-form" class="checkout lynessa-checkout">
+									<div class="col2-set" id="customer_details">
+										<div class="col-1">
+											<div class="lynessa-billing-fields">
+												<h3>Billing details</h3>
+												<div class="lynessa-billing-fields__field-wrapper">
+													<p class="form-row form-row-first validate-required"
+														id="bill_firstname_field" data-priority="10">
+														<label for="bill_firstname" class="">First name&nbsp;<abbr
+																class="required" title="required">*</abbr></label>
+														<span class="lynessa-input-wrapper">
+															<input type="text" class="input-text " name="bill_firstname"
+																id="bill_firstname" placeholder="Enter First Name"
+																autocomplete="given-name"></span>
+													</p>
+													<p class="form-row form-row-last validate-required"
+														id="bill_lastname_field" data-priority="20"><label
+															for="bill_lastname" class="">Last name&nbsp;<abbr
+																class="required" title="required">*</abbr></label><span
+															class="lynessa-input-wrapper"><input type="text"
+																class="input-text " name="bill_lastname"
+																placeholder="Enter Last Name" id="bill_lastname"></span>
+													</p>
+
+													<p class="form-row form-row-wide address-field update_totals_on_change validate-required"
+														id="bill_country_field" data-priority="40"><label
+															for="bill_country" class="">Country &nbsp;<abbr
+																class="required" title="required">*</abbr></label>
+														<span class="lynessa-input-wrapper">
+															<input type="text" class="input-text " name="bill_country"
+																placeholder="Search and find country" id="bill_country"
+																onclick="showOption('bill_country')"
+																oninput="selectSearch(this.value,'country','bill')"
+																autocomplete="off">
+
+															<div class="bill_country_iop-list select-hidden">
+
+															</div>
+														</span>
+													</p>
+
+													<p class="form-row form-row-wide address-field update_totals_on_change validate-required"
+														id="bill_state_field" data-priority="40">
+														<label for="bill_state" class="">State &nbsp;<abbr
+																class="required" title="required">*</abbr>
+															<i id="bill_state_spinner" class="spin  las la-spinner"
+																style="display: none;"></i>
+														</label>
+														<span class="lynessa-input-wrapper">
+															<input type="text" class="input-text " name="bill_state"
+																placeholder="Search and find state" id="bill_state"
+																oninput="selectSearch(this.value,'state','bill')"
+																autocomplete="off">
+
+															<div class="bill_state_iop-list select-hidden">
+
+															</div>
+														</span>
+													</p>
+
+
+													<p class="form-row form-row-wide address-field update_totals_on_change validate-required"
+														id="bill_city_field" data-priority="40"><label for="bill_city"
+															class="">City &nbsp;<abbr class="required"
+																title="required">*</abbr>
+															<i id="bill_city_spinner" class="spin  las la-spinner"
+																style="display: none;"></i>
+														</label>
+														<span class="lynessa-input-wrapper">
+															<input type="text" class="input-text " name="bill_city"
+																placeholder="Search and find city" id="bill_city"
+																oninput="selectSearch(this.value,'city','bill')"
+																autocomplete="off">
+
+															<div class="bill_city_iop-list select-hidden">
+
+															</div>
+														</span>
+													</p>
+
+													<p class="form-row form-row-wide address-field validate-required"
+														id="bill_street_field" data-priority="50"><label
+															for="bill_street" class="">Street address&nbsp;<abbr
+																class="required" title="required">*</abbr></label><span
+															class="lynessa-input-wrapper"><input type="text"
+																class="input-text " name="bill_street" id="bill_street"
+																placeholder="House number and street name" value=""
+																autocomplete="address-line1"
+																data-placeholder="House number and street name"></span>
+													</p>
+
+													<p class="form-row form-row-wide address-field validate-required"
+														id="bill_zip_field" data-priority="50"><label for="bill_zip"
+															class="">Postcode / ZIP&nbsp;<abbr class="required"
+																title="required">*</abbr></label><span
+															class="lynessa-input-wrapper"><input type="text"
+																class="input-text " name="bill_zip" id="bill_zip"
+																placeholder="House number and street name" value=""
+																autocomplete="address-line1"
+																data-placeholder="House number and street name"></span>
+													</p>
+
+													<p class="form-row form-row-wide validate-required validate-phone"
+														id="bill_phone_field" data-priority="100"><label
+															for="bill_phone" class="">Phone&nbsp;<abbr class="required"
+																title="required">*</abbr></label><span
+															class="lynessa-input-wrapper"><input type="tel"
+																class="input-text " name="bill_phone" id="bill_phone"
+																placeholder="" value="" autocomplete="tel"></span>
+													</p>
+													<p class="form-row form-row-wide validate-required validate-email"
+														id="bill_email_field" data-priority="110"><label
+															for="bill_email" class="">Email
+															address&nbsp;<abbr class="required"
+																title="required">*</abbr></label><span
+															class="lynessa-input-wrapper"><input type="email"
+																class="input-text " name="bill_email" id="bill_email"
+																placeholder="" value=""
+																autocomplete="email username"></span>
+													</p>
+												</div>
+											</div>
+											<div class="lynessa-account-fields">
+												<label
+													class="lynessa-form__label lynessa-form__label-for-checkbox checkbox">
+													<input
+														class="lynessa-form__input lynessa-form__input-checkbox input-checkbox"
+														id="toggle-checkbox" type="checkbox" name="createaccount"
+														value="1">
+													<span>Create an account?</span>
+												</label>
+												<div id="collapsible-content" style="display: none;">
+													<p class="form-row form-row-wide validate-required validate-phone"
+														id="ship_username_field" data-priority="100"><label
+															for="ship_phone" class="">Account username &nbsp;<abbr
+																class="required" title="required">*</abbr></label><span
+															class="lynessa-input-wrapper"><input type="tel"
+																class="input-text " id="ship_username"
+																autocomplete="tel"></span>
+													</p>
+													<p class="form-row form-row-wide validate-required validate-email"
+														id="ship_password_field" data-priority="110"><label
+															for="ship_password" class="">Create account password
+															&nbsp;<abbr class="required"
+																title="required">*</abbr></label><span
+															class="lynessa-input-wrapper"><input type="password"
+																class="input-text " id="ship_password"
+																autocomplete="account password"></span>
+													</p>
+												</div>
+											</div>
+											<div class="lynessa-account-fields">
+												<label
+													class="lynessa-form__label lynessa-form__label-for-checkbox checkbox">
+													<input
+														class="lynessa-form__input lynessa-form__input-checkbox input-checkbox"
+														id="toggle2-checkbox" type="checkbox" name="createaccount"
+														value="1"> <span>Ship to a different address?</span>
+												</label>
+												<div id="collapsible2-content" style="display: none;">
+													<p class="form-row form-row-first validate-required"
+														id="ship_firstname_field" data-priority="10">
+														<label for="ship_firstname" class="">First name&nbsp;<abbr
+																class="required" title="required">*</abbr></label>
+														<span class="lynessa-input-wrapper">
+															<input type="text" class="input-text " name="ship_firstname"
+																id="ship_firstname" placeholder="" value=""
+																autocomplete="given-name"></span>
+													</p>
+													<p class="form-row form-row-last validate-required"
+														id="ship_lastname_field" data-priority="20"><label
+															for="ship_lastname" class="">Last name&nbsp;<abbr
+																class="required" title="required">*</abbr></label><span
+															class="lynessa-input-wrapper"><input type="text"
+																class="input-text " name="ship_lastname"
+																id="ship_lastname"></span>
+													</p>
+													<p class="form-row form-row-wide address-field update_totals_on_change validate-required"
+														id="ship_country_field" data-priority="40"><label
+															for="ship_country" class="">Country &nbsp;<abbr
+																class="required" title="required">*</abbr></label>
+														<span class="lynessa-input-wrapper">
+															<input type="text" class="input-text " name="ship_country"
+																placeholder="Search and find country" id="ship_country"
+																onclick="showOption('ship_country')"
+																oninput="selectSearch(this.value,'country','ship')"
+																autocomplete="off">
+
+															<div class="ship_country_iop-list select-hidden">
+
+															</div>
+														</span>
+													</p>
+
+													<p class="form-row form-row-wide address-field update_totals_on_change validate-required"
+														id="ship_state_field" data-priority="40"><label for="ship_state"
+															class="">State &nbsp;<abbr class="required"
+																title="required">*</abbr>
+															<i id="ship_state_spinner" class="spin  las la-spinner"
+																style="display: none;"></i>
+														</label>
+														<span class="lynessa-input-wrapper">
+															<input type="text" class="input-text " name="ship_state"
+																placeholder="Search and find state" id="ship_state"
+																oninput="selectSearch(this.value,'state','ship')"
+																autocomplete="off">
+
+															<div class="ship_state_iop-list select-hidden">
+
+															</div>
+														</span>
+													</p>
+
+
+													<p class="form-row form-row-wide address-field update_totals_on_change validate-required"
+														id="ship_city_field" data-priority="40"><label for="ship_city"
+															class="">City &nbsp;<abbr class="required"
+																title="required">*</abbr>
+															<i id="ship_city_spinner" class="spin  las la-spinner"
+																style="display: none;"></i>
+														</label>
+														<span class="lynessa-input-wrapper">
+															<input type="text" class="input-text " name="ship_city"
+																placeholder="Search and find city" id="ship_city"
+																oninput="selectSearch(this.value,'city','ship')"
+																autocomplete="off">
+
+															<div class="ship_city_iop-list select-hidden">
+
+															</div>
+														</span>
+													</p>
+													<p class="form-row form-row-wide address-field validate-required"
+														id="ship_street_field" data-priority="50"><label
+															for="ship_street" class="">Street address&nbsp;<abbr
+																class="required" title="required">*</abbr></label><span
+															class="lynessa-input-wrapper"><input type="text"
+																class="input-text " name="ship_street" id="ship_street"
+																placeholder="House number and street name" value=""
+																autocomplete="address-line1"
+																data-placeholder="House number and street name"></span>
+													</p>
+
+													<p class="form-row form-row-wide address-field validate-postcode"
+														id="ship_zip_field" data-priority="65"
+														data-o_class="form-row form-row-wide address-field validate-postcode">
+														<label for="ship_zip" class="">Postcode / ZIP&nbsp;<span
+																class="optional">(optional)</span></label><span
+															class="lynessa-input-wrapper"><input type="text"
+																class="input-text " name="ship_zip" id="ship_zip"
+																placeholder="" value=""
+																autocomplete="postal-code"></span>
+													</p>
+
+													<p class="form-row form-row-wide validate-required validate-phone"
+														id="ship_phone_field" data-priority="100"><label
+															for="ship_phone" class="">Phone&nbsp;<abbr class="required"
+																title="required">*</abbr></label><span
+															class="lynessa-input-wrapper"><input type="tel"
+																class="input-text " name="ship_phone" id="ship_phone"
+																placeholder="" value="" autocomplete="tel"></span>
+													</p>
+													<p class="form-row form-row-wide validate-required validate-email"
+														id="ship_email_field" data-priority="110"><label
+															for="ship_email" class="">Email
+															address&nbsp;<abbr class="required"
+																title="required">*</abbr></label><span
+															class="lynessa-input-wrapper"><input type="email"
+																class="input-text " name="ship_email" id="ship_email"
+																autocomplete="email username"></span>
+													</p>
+												</div>
+											</div>
+
+										</div>
+										<div class="col-2">
+											<div class="lynessa-shipping-fields">
+											</div>
+											<div class="lynessa-additional-fields">
+												<h3>Additional information</h3>
+												<div class="lynessa-additional-fields__field-wrapper">
+													<p class="form-row notes" id="remark_field" data-priority=""><label
+															for="remark" class="">Order
+															notes&nbsp;<span
+																class="optional">(optional)</span></label><span
+															class="lynessa-input-wrapper"><textarea name="remark"
+																class="input-text " id="remark"
+																placeholder="Notes about your order, e.g. special notes for delivery."
+																rows="2" cols="5"></textarea></span>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 id="order_review_heading">Your order</h3>
+									<div id="order_review" class="lynessa-checkout-review-order">
+										<table class="shop_table lynessa-checkout-review-order-table"
+											style="display: table;">
+											<thead>
+												<tr>
+													<th class="product-name">Product</th>
+													<th class="product-total">Total</th>
+												</tr>
+											</thead>
+											<tbody id="checkout-tbody">
+
+											</tbody>
+											<tfoot style="width: 100%;">
+												<tr>
+													<th>
+														<div>Shipping</div>
+														<div style="padding: 10px 0;">
+															<label class="radio-inline" for="shipping0">
+																<input type="radio" name="shipping" value="0" checked
+																	id="shipping0" />
+																<span>Free Shipping<span>
+															</label>
+															<label class="radio-inline" for="shipping1"
+																style="display: flex;">
+																<input type="radio" name="shipping" value="1"
+																	id="shipping1" />
+																<span style="display: flex;">Express Shipping:$ <i
+																		id="shipping-cost">0.00</i></span>
+															</label>
+														</div>
+													</th>
+												</tr>
+												<tr>
+													<th class="product-name">Subtotal</th>
+													<td style="text-align: right;"><strong><span
+																class="lynessa-Price-amount amount"><span
+																	class="lynessa-Price-currencySymbol">$</span><span
+																	id="subtotal">0.00</span></span></strong>
+													</td>
+												</tr>
+												<tr class="order-total">
+													<th>Total</th>
+													<td><strong><span class="lynessa-Price-amount amount"><span
+																	class="lynessa-Price-currencySymbol">$</span><span
+																	id="settlementMoney">0.00</span></span></strong>
+													</td>
+												</tr>
+											</tfoot>
+										</table>
+										<input type="hidden" name="lang" value="en">
+										<div>
+											<label class="lynessa-form__label ">
+												<h3>Payment Method</h3>
+											</label>
+											<div>
+
+												<div class="payment-options single-payment">
+													<div class="payment-option" id="paypal-option">
+														<input class="payentradio" type="radio" id="paypal" name="payment-method" value="paypal" checked>
+														<label for="paypal">
+															<div class="option-content">
+																<div class="option-icon paypal-icon"></div>
+																<div class="option-text">
+																	<span class="option-title">PayPal</span>
+																	<span class="option-description">Pay with your PayPal account</span>
+																</div>
+															</div>
+														</label>
+													</div>
+
+													<div class="payment-option" id="credit-card-option">
+														<input class="payentradio" type="radio" id="credit-card" name="payment-method" value="credit-card">
+														<label for="credit-card">
+															<div class="option-content">
+																<div class="option-icon credit-card-icon"></div>
+																<div class="option-text">
+																	<span class="option-title">Credit Card</span>
+																	<span class="option-description">Pay with Visa, Mastercard, etc.</span>
+																</div>
+															</div>
+														</label>
+													</div>
+												</div>
+
+												<div id="credit-card-form" class="payment-form hidden">
+													<div class="form-group">
+														<label for="card-number">Card Number</label>
+														<div class="card-input-wrapper">
+															<input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19">
+															<div id="card-brand-icon" class="card-brand-icon"></div>
+														</div>
+														<div id="card-type" class="card-type-message"></div>
+													</div>
+
+													<div class="form-row">
+														<div class="form-group half">
+															<label for="expiry-date">Expiry Date</label>
+															<input type="text" id="expiry-date" placeholder="MM/YY" maxlength="5">
+														</div>
+
+														<div class="form-group half">
+															<label for="cvc">CVC</label>
+															<input type="text" id="cvc" placeholder="123" maxlength="4">
+														</div>
+													</div>
+												</div>
+
+												<div id="card-error" class="error-message"></div>
+
+
+
+
+												<div class="form-row place-order">
+													<!-- <noscript>
+														Since your browser does not support JavaScript, or it is
+														disabled,
+														please
+														ensure you click the <em>Update Totals</em> button before
+														placing
+														your
+														order. You may be charged more than the amount stated above if
+														you
+														fail to
+														do so. <br>
+														<button type="submit" class="button alt"
+															name="lynessa_checkout_update_totals" value="Update totals">
+															Update totals
+														</button>
+													</noscript>
+													<div class="lynessa-terms-and-conditions-wrapper">
+														<div class="lynessa-privacy-policy-text">
+															<p>Your personal data will be
+																used to process your order, support your experience
+																throughout this
+																website, and for other purposes described in our <a
+																	href="#" class="lynessa-privacy-policy-link"
+																	target="_blank">privacy
+																	policy</a>.</p>
+														</div>
+													</div> -->
+													<button type="button" class="button alt" id="place_order">Place
+														order
+													</button>
+													<input type="hidden" id="lynessa-process-checkout-nonce"
+														name="lynessa-process-checkout-nonce" value="634590c981"><input
+														type="hidden" name="_wp_http_referer"
+														value="/lynessa/?lynessa-ajax=update_order_review">
+												</div>
+											</div>
+										</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div id="foot">
+		</div>
+
+		<script src="static/js/jquery-1.12.4.min.js"></script>
+		<script src="static/js/bootstrap.min.js"></script>
+		<script src="static/js/chosen.min.js"></script>
+		<script src="static/js/countdown.min.js"></script>
+		<script src="static/js/jquery.scrollbar.min.js"></script>
+		<script src="static/js/lightbox.min.js"></script>
+		<script src="static/js/magnific-popup.min.js"></script>
+		<script src="static/js/slick.js"></script>
+		<script src="static/js/jquery.toast.js"></script>
+		<script src="static/js/jquery.zoom.min.js"></script>
+		<script src="static/js/threesixty.min.js"></script>
+		<script src="static/js/jquery-ui.min.js"></script>
+		<script src="static/js/mobilemenu.js"></script>
+		<script src="static/js/functions.js" type="module"></script>
+		<script src="static/js/mobilemenu.js" type="module"></script>
+		<script src="static/ajaxJs/js/cart.js" type="module"></script>
+		<script src="static/ajaxJs/js/head.js" type="module"></script>
+		<script src="static/ajaxJs/js/checkout.js" type="module"></script>
+		<script src="static/ajaxJs/common/region-verify.js" type="module"></script>
+
+	</body>
+</html>
